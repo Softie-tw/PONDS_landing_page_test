@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>PONDS App Preview</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: #f1f1f1;
+        }
+
+        .top-container {
+          background-color: #f1f1f1;
+          padding: 30px;
+          text-align: center;
+        }
+
+        .header {
+            padding: 10px 16px;
+            background: white;
+            color: black;
+        }
+
+        .content {
+          padding: 16px;
+          margin-bottom: 10%;
+          text-align:center;
+          
+        }
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 100;
+        }
+
+        .sticky + .content {
+          padding-top: 102px;
+        }
+        #bottombar{
+            background-color: white;
+            z-index: 100;
+            position: fixed;
+            bottom: 0px;
+            width : 100%;
+            height: 8vh;
+            overflow: hidden;
+            display: block
+        }
+        
+        #back_button{
+            position: absolute;
+            height: 5vh;
+            width: 5vh;
+            top: 65% ;
+            left: 10%;
+            transform: translate(-10%,-65%);
+            text-align: center;
+            z-index: 101;
+            
+        }
+        #home_button{
+            position: absolute;
+            height: 5vh;
+            width: 5vh;
+            top: 65% ;
+            left: 50%;
+            transform: translate(-50%,-65%);
+            text-align: center;
+            z-index: 101;
+            
+        }
+        #shop_button{
+            position: absolute;
+            height: 5vh;
+            width: 5vh;
+            top: 65% ;
+            right: 10%;
+            transform: translate(10%,-65%);
+            text-align: center;
+            z-index: 101;
+        }
+        
+        #reserve_button{
+            width: 30%;
+            height: 50%;
+            margin: 0px 0px;
+            display:inline-block;
+            background-color: blue;
+            border-radius:10px;
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+        #reserve_button a:link, a:visited{
+            display: inline-block;
+            width:100%;
+            height:100%;
+            z-index: 100;
+            position:relative;
+        }
+        #reserve_button p{
+            font-size:15px;
+            margin:0;
+            color:white;
+            text-decoration: none;
+            position: absolute;
+            top: 50% ;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            z-index:99;
+        }
+        .plant_box {
+            display: inline-block;
+            height: 20vh;
+            width: 100%;
+            background-color: white;
+            border-radius: 5%;
+            margin: 1vh 0px;
+            position: relative;
+        }
+        .plant_box a{
+            z-index: 99;
+            position: absolute; 
+            top: 0; 
+            right: 0; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+        }
+        .plant_box .image{
+            display: inline-block;
+            height: 90%;
+            width: 40%;
+            border-radius: 5%;
+            margin: 0px;
+            position: absolute;
+            top: 50% ;
+            left: 5%;
+            transform: translateY(-50%);
+            
+        }
+        .plant_box .name_tag{
+            display: inline-block;
+            height: 40%;
+            width: 45%;
+            position: absolute;
+            top: 10% ;
+            right: 5%;
+            transform: translateY(-10%);
+        }
+        .plant_box .status{
+            display: inline-block;
+            height: 40%;
+            width: 45%;
+            position: absolute;
+            top: 80% ;
+            right: 5%;
+            transform: translateY(-80%);
+        }
+        .plant_box .status img{
+            display: inline-block;
+            height: 100%;
+            width: 40%;
+            position: absolute;
+            top: 50% ;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        #add_plant{
+            display: inline-block;
+            height: 55%;
+            width: 18%;
+            position: absolute;
+            top: 30% ;
+            left: 50%;
+            transform: translate(-50%,-30%);
+            text-align: center;
+        }
+        #add_plant_text{
+            display: inline-block;
+            font-size: 2.5vh;
+            color: #c0c0c0;
+            position: absolute;
+            top: 65% ;
+            left: 50%;
+            transform: translate(-50%,-65%);
+            text-align: center;
+            
+        }
+        
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="header sticky" id="myHeader">
+        <p style="width: 50%;font-size:40px;margin: 10px 10px; display:inline-block">Your Plants</p>
+        <div id = "reserve_button" >
+            <a href="./reservoir_page.html" ></a>
+            <p>Reservoir Details</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class = "plant_box">
+            <a href="./plant_pages/bird_of_paraidse.html"></a>
+            <img class = "plant_box image" src="./pics/bird_of_paradise.jpg" alt="bird of paradise pic"> </img>
+            <div class = "plant_box name_tag">
+                <h3> Bird of Paradise </h3>
+            </div>
+            <div class = "plant_box status">
+                <img src="./icons/check.png" alt="V"> </img>
+            </div>
+        </div>
+        <div class = "plant_box">
+            <a href="./plant_pages/orchid.html"></a>
+            <img class = "plant_box image" src="./pics/orchid.jpg" alt="orchid pic"> </img>
+            <div class = "plant_box name_tag">
+                <h3> Orchid </h3>
+            </div>
+            <div class = "plant_box status">
+                <img src="./icons/excla.png" alt="V"> </img>
+            </div>
+        </div>
+        <div class = "plant_box">
+            <a href="./plant_pages/snake_plant.html"></a>
+            <img class = "plant_box image" src="./pics/snake_plant.jpg" alt="snake plant pic"> </img>
+            <div class = "plant_box name_tag">
+                <h3> Snake Plant (Cutting) </h3>
+            </div>
+            <div class = "plant_box status">
+                <img src="./icons/check.png" alt="V"> </img>
+            </div>
+        </div>
+        <div class = "plant_box">
+            <a href="./add_plant.html"></a>
+            <img id = "add_plant" src="./icons/add_plant.png" alt="add plant pic"> </img>
+            <h4 id = "add_plant_text"> Add new plant</h4>
+        </div>
+        
+    </div>
+    
+    <div id="bottombar" >
+        <img id = "back_button" src="./icons/back.png" alt="back pic"> </img>
+        <a   id = "back_button" href="./app_home.html"></a>
+        <img id = "home_button" src="./icons/home.png" alt="home pic"> </img>
+        <a   id = "home_button" href="./user_home.html"></a>
+        <img id = "shop_button" src="./icons/shopping-cart.png" alt="shopping pic"> </img>
+        <a   id = "shop_button" href="./shopping.html"></a>
+    </div>
+
+    <script>
+    /*
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    */
+    </script>
+
+</body>
+</html>

@@ -24,9 +24,9 @@
         }
 
         .content {
-          padding: 16px;
-          margin-bottom: 10vh;
-          text-align:center;
+            margin-top: 12vh;
+            margin-bottom: 10vh;
+            text-align:center;
           
         }
 
@@ -36,10 +36,13 @@
           width: 100%;
           z-index: 100;
         }
-
-        .sticky + .content {
-          padding-top: 102px;
+        #top_title{
+            width: 70%;
+            font-size:min(6vw,6vh);
+            margin: 10px 10px;
+            display:inline-block;
         }
+        
         #bottombar{
             background-color: white;
             z-index: 100;
@@ -198,7 +201,7 @@
 </head>
 <body>
     <div class="header sticky" id="myHeader">
-        <p style="width: 70%;font-size:40px;margin: 10px 10px; display:inline-block">Reservoir Details</p>
+        <p id ="top_title">Reservoir Details</p>
     </div>
 
     <div class="content">

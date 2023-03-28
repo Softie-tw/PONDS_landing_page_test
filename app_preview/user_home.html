@@ -25,14 +25,18 @@
         }
 
         .content {
-          padding: 16px;
-          margin-bottom: 10vh;
-          text-align:center;
+            margin-top: 12vh;
+            margin-bottom: 10vh;
+            text-align:center;
           
         }
-        .sticky + .content {
-          padding-top: 102px;
+        #top_title{
+            width: 70%;
+            font-size:min(6vw,6vh);
+            margin: 10px 10px;
+            display:inline-block;
         }
+        
         #bottombar{
             background-color: white;
             z-index: 100;
@@ -196,7 +200,7 @@
 </head>
 <body>
     <div class="header sticky" id="myHeader">
-        <p style="width: 70%;font-size:6vw;margin: 10px 10px; display:inline-block">Your Plants</p>
+        <p id ="top_title">Your Plants</p>
         <div id = "reserve_button" >
             <a href="./reservoir_page.html" ></a>
             <p>Reservoir Details</p>
